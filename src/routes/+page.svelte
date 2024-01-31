@@ -1,2 +1,18 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+	import { enhance } from '$app/forms';
+	import Button from '$lib/components/ui/button/button.svelte';
+	import { Github } from 'lucide-svelte';
+</script>
+
+<div class="flex h-[calc(100vh-65px)] flex-col items-center justify-center gap-3">
+	<h1 class="font-bold md:text-4xl">Username - Password Auth using Lucia</h1>
+	<div class="flex gap-3">
+		<form method="post" use:enhance action="?/logout">
+			<Button>Sign out</Button>
+		</form>
+		<Button>
+			<Github size={20} strokeWidth={1.5} class="mr-1.5" />
+			Github</Button
+		>
+	</div>
+</div>

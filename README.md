@@ -1,38 +1,56 @@
-# create-svelte
+# Username - Password Authentication with Lucia-Auth
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+This project demonstrates how to implement Username-password authentication using Lucia-Auth and the SvelteKit full-stack framework. It also utilizes the Shadcn-Svelte CSS library for styling, Lucide-Svelte for icons, Drizzle ORM for data management, and Supabase for storing data.
 
-## Creating a project
+## Prerequisites
 
-If you're seeing this, you've probably already done this step. Congrats!
+Before getting started, make sure you have the following installed:
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+- Node.js
+- npm or yarn
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+## Getting Started
 
-## Developing
+1. Clone the repository:
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+   ```bash
+   git clone https://github.com/SikandarJODD/Auth-Lucia
+   ```
 
-```bash
-npm run dev
+2. Install the dependencies:
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+   ```bash
+   cd auth-lucia
+   npm install
+   ```
 
-## Building
+3. Configure the environment variables:
 
-To create a production version of your app:
+   Create a `.env` file in the root directory and add the following variables:
 
-```bash
-npm run build
-```
+   ```bash
+   DATABASE_URL = ''
+   ```
 
-You can preview the production build with `npm run preview`.
+4. Run the application:
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+   ```bash
+   npm run dev
+   ```
+
+5. Open your browser and navigate to `http://localhost:5173` to see the application in action.
+
+## Features
+
+- User registration with Username and password
+- User login with Username and password
+<!-- - Password reset functionality
+- User profile management -->
+
+## Contributing
+
+Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).

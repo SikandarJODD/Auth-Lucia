@@ -9,13 +9,18 @@
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"lint": "prettier --check .",
-		"format": "prettier --write ."
+		"format": "prettier --write .",
+		"pull": "drizzle-kit introspect:pg",
+		"push": "drizzle-kit push:pg",
+		"generate": "drizzle-kit generate:pg"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^3.0.0",
 		"@sveltejs/kit": "^2.0.0",
 		"@sveltejs/vite-plugin-svelte": "^3.0.0",
+		"@types/pg": "^8.11.0",
 		"autoprefixer": "^10.4.16",
+		"drizzle-kit": "^0.20.13",
 		"postcss": "^8.4.32",
 		"postcss-load-config": "^5.0.2",
 		"prettier": "^3.1.1",
@@ -23,16 +28,24 @@
 		"prettier-plugin-tailwindcss": "^0.5.9",
 		"svelte": "^4.2.7",
 		"svelte-check": "^3.6.0",
+		"sveltekit-superforms": "^1.13.4",
 		"tailwindcss": "^3.4.1",
 		"tslib": "^2.4.1",
 		"typescript": "^5.0.0",
-		"vite": "^5.0.3"
+		"vite": "^5.0.3",
+		"zod": "^3.22.4"
 	},
 	"type": "module",
 	"dependencies": {
+		"@lucia-auth/adapter-drizzle": "^1.0.0",
 		"bits-ui": "^0.16.0",
 		"clsx": "^2.1.0",
+		"drizzle-orm": "^0.29.3",
+		"lucia": "^3.0.1",
+		"lucide-svelte": "^0.320.0",
 		"mode-watcher": "^0.2.0",
+		"oslo": "^1.0.3",
+		"pg": "^8.11.3",
 		"radix-icons-svelte": "^1.2.1",
 		"tailwind-merge": "^2.2.1",
 		"tailwind-variants": "^0.1.20"
