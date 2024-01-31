@@ -6,13 +6,9 @@
 
 <div class="flex h-[calc(100vh-65px)] flex-col items-center justify-center gap-3">
 	<h1 class="font-bold md:text-4xl">Username - Password Auth using Lucia</h1>
-	<div class="flex gap-3">
-		<form method="post" use:enhance action="?/logout">
-			<Button>Sign out</Button>
-		</form>
-		<Button>
-			<Github size={20} strokeWidth={1.5} class="mr-1.5" />
-			Github</Button
-		>
-	</div>
+
+	<Button href="https://github.com/SikandarJODD/Auth-Lucia" target="_blank">
+		<Github size={20} strokeWidth={1.5} class="mr-1.5" />
+		Github Code</Button
+	>
 </div>

@@ -13,21 +13,23 @@
 			<Card.Title class="text-2xl">Login to Continue</Card.Title>
 			<Card.Description>Enter your username below to create your account</Card.Description>
 		</Card.Header>
-		<Card.Content class="grid gap-4">
-			<div class="grid gap-2">
-				<Label for="username">Username</Label>
-				<Input id="username" type="text" placeholder="John" />
-			</div>
-			<div class="grid gap-2">
-				<Label for="password">Password</Label>
-				<Input id="password" type="password" placeholder="*******" />
-			</div>
-		</Card.Content>
-		<Card.Footer class="pb-2">
-			<Button class="w-full">Create account</Button>
-		</Card.Footer>
+		<form method="post">
+			<Card.Content class="grid gap-4">
+				<div class="grid gap-2">
+					<Label for="username">Username</Label>
+					<Input id="username" type="text" placeholder="John" name="username" />
+				</div>
+				<div class="grid gap-2">
+					<Label for="password">Password</Label>
+					<Input id="password" type="password" placeholder="*******" name="password" />
+				</div>
+			</Card.Content>
+			<Card.Footer class="pb-2">
+				<Button type="submit" class="w-full">Login</Button>
+			</Card.Footer>
+		</form>
 		<Card.Footer class="flex justify-center ">
-			<div>Already have an account? <a href="/login" class="underline">Login</a></div>
+			<div>Create New Account? <a href="/signup" class="underline">Sign Up</a></div>
 		</Card.Footer>
 	</Card.Root>
 </div>
