@@ -43,35 +43,38 @@
 	];
 </script>
 
-<table class="mt-4 w-96">
-	<tr>
-		<th>Tech</th>
-		<th>Frameworks & Library</th>
-	</tr>
-	{#each tablerow as item}
-		<tr class="dark:odd:bg-gray-800/40 dark:hover:bg-gray-800/60">
-			<td class="font-medium">{item.tech}</td>
-			<td class="flex items-center gap-1.5 font-medium">
-				{#if item.tech === 'Auth'}
-					<img src={item.link} width="20" height="20" alt="lucia-auth" />
-				{:else}
-					{@html item.svg}
-				{/if}
-				{item.name}</td
-			>
+<div class="px-2">
+	<table class="w-full md:mt-4 md:w-96">
+		<tr>
+			<th>Tech</th>
+			<th>Frameworks & Library</th>
 		</tr>
-	{/each}
-</table>
+		{#each tablerow as item}
+			<tr class="dark:odd:bg-gray-800/40 dark:hover:bg-gray-800/60">
+				<td class="font-medium">{item.tech}</td>
+				<td class="bottom-0 flex items-center gap-1.5 border-none font-medium">
+					{#if item.tech === 'Auth'}
+						<img src={item.link} width="20" height="20" alt="lucia-auth" />
+					{:else}
+						{@html item.svg}
+					{/if}
+					{item.name}</td
+				>
+			</tr>
+		{/each}
+	</table>
+</div>
 
 <style>
-	td,
-	th {
-		border: 1px solid #dddddd;
+	td {
+		border: 1px solid #8d8d8d;
 		text-align: left;
 		padding: 8px;
 	}
-
-	/* tr:nth-child(even) {
-		background-color: #dddddd;
-	} */
+	th {
+		border: 1px solid #bdbdbd;
+		border-radius: 10px;
+		text-align: left;
+		padding: 8px;
+	}
 </style>
