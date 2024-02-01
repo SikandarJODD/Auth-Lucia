@@ -1,13 +1,24 @@
 # Username - Password Authentication with Lucia-Auth
 
-This project demonstrates how to implement Username-password authentication using Lucia-Auth and the SvelteKit full-stack framework. It also utilizes the Shadcn-Svelte CSS library for styling, Lucide-Svelte for icons, Drizzle ORM for data management, and Supabase for storing data.
+This project demonstrates how to implement Username-password authentication using Lucia-Auth and the SvelteKit full-stack framework. It also utilizes the Shadcn-Svelte CSS library for styling, Lucide-Svelte for icons, Drizzle ORM, Supabase for storing data.
 
-## Prerequisites
+## Tech Framework & Library
 
-Before getting started, make sure you have the following installed:
+| Topic      | Frameworks         |
+| ---------- | ------------------ |
+| Full Stack | **Sveltekit 🔥**   |
+| Auth       | **Lucia-Auth**     |
+| CSS        | **Shadcn-Svelte**  |
+| Database   | **Supabase**       |
+| ORM        | **Drizzle ORM** ✨ |
 
-- Node.js
-- npm or yarn
+### Website Demo
+
+[Live Preview](https://auth-lucia.vercel.app)
+
+```
+  https://auth-lucia.vercel.app
+```
 
 ## Getting Started
 
@@ -50,6 +61,12 @@ Before getting started, make sure you have the following installed:
 ## Contributing
 
 Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
+
+## Credits:
+
+1. [Lucia Auth](https://lucia-auth.com)
+2. [Username-Password](https://lucia-auth.com/tutorials/username-and-password/) Tutorial
+3. [Pilcrowonpaper](https://twitter.com/pilcrowonpaper) `--Twitter`
 
 ## License
 

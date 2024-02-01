@@ -1,5 +1,6 @@
 <script>
 	import Button from '$lib/components/ui/button/button.svelte';
+	import UsageTech from '$lib/home/UsageTech.svelte';
 	import { Github } from 'lucide-svelte';
 </script>
 
@@ -10,4 +11,5 @@
 		<Github size={20} strokeWidth={1.5} class="mr-1.5" />
 		Github Code</Button
 	>
+	<UsageTech />
 </div>
